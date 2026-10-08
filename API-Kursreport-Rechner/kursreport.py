@@ -73,10 +73,10 @@ def main(basis:str, ziel:str, zeitraum:int):
     plt.show()
     plt.close(fig)
 
-    print(f"Höchste: {hoechste_d.date()} {hoechste:.4f} ") #type: ignore
-    print(f"Tiefste: {niedrigste_d.date()} {niedrigste:.4f} ") #type: ignore
-    print(f"Start kurs lag bei {start_kurs:.4f}")
-    print(f"End kurs lag bei {end_kurs:.4f}")
+    print(f"Höchste: Am {hoechste_d.date()} bei {hoechste:.4f} €") #type: ignore
+    print(f"Tiefste: Am {niedrigste_d.date()} bei {niedrigste:.4f} €") #type: ignore
+    print(f"Start kurs lag bei {start_kurs:.4f} €")
+    print(f"End kurs lag bei {end_kurs:.4f} €")
     print(f"Der Kurs hat sich um {veraenderung:+.2f}% verändert " )
 
 
