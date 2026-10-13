@@ -109,7 +109,7 @@ def main(symbol):
     if neu == True: 
         print(f"{symbol}: {datum} - {kurs:.2f}USD gespeichert")
     else:
-        print("Schon vorhanden")
+        print(f"Schon vorhanden: {datum} : {symbol}")
     con.close()
 
 
