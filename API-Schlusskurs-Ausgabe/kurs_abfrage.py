@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import sys
 import sqlite3
 from pathlib import Path
+from datetime import datetime
 
 
 BASIS = Path(__file__).resolve().parent
@@ -66,6 +67,8 @@ def speichere_kurs(con, symbol, datum, kurs):
 
 
 def main(symbol):
+
+    print(f"{datetime.now():%Y-%m-%d %H:%M}")
 
 
     load_dotenv(BASIS / ".env")

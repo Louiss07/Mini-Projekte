@@ -1,2 +1,3 @@
 .env
 kurse.db
+cron.log
